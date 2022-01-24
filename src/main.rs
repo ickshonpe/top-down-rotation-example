@@ -28,7 +28,7 @@ pub fn spawn_player(
                     custom_size: Some(vec2(4.0, 8.0)),
                     ..Default::default()
                 },
-                transform: Transform::from_translation(12.0 * Vec3::Y + Vec3::Z),
+                transform: Transform::from_translation(12.0 * Vec3::Y),
                 ..Default::default()
             }
         );
