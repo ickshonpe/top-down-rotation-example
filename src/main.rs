@@ -8,6 +8,7 @@ pub struct PlayerCharacter;
 #[derive(Component)]
 pub struct Speed(f32);
 
+
 pub fn spawn_player(
     mut commands: Commands
 ) {
@@ -15,7 +16,7 @@ pub fn spawn_player(
     .spawn_bundle(
         SpriteBundle {
             sprite: Sprite {
-                custom_size: Some(Vec2::splat(16.0)),
+                custom_size: Some(Vec2::splat(32.0)),
                 ..Default::default()
             },
             ..Default::default()
@@ -25,10 +26,10 @@ pub fn spawn_player(
         builder.spawn_bundle(
             SpriteBundle {
                 sprite: Sprite {
-                    custom_size: Some(vec2(4.0, 8.0)),
+                    custom_size: Some(vec2(8.0, 16.0)),
                     ..Default::default()
                 },
-                transform: Transform::from_translation(12.0 * Vec3::Y),
+                transform: Transform::from_translation(24.0 * Vec3::Y),
                 ..Default::default()
             }
         );
